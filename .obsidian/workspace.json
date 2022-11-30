@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "08eaadbcf2177936",
+    "type": "split",
+    "children": [
+      {
+        "id": "51b2f8004b44c1e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e75418c5e616f30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/ssh.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85126dc1557f0af5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5eeb41de670fb853",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35a77d98b36ab5e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fd5176ba31c1f298",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c8ee11dd0559c2ed",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b13644c15b90bebf",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9bd3c0844515ffb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "facc82eeec1fa081",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/ssh.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "69ae8fd827886c3f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/ssh.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "61fec76a9b88980d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ff24c79fff407181",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/ssh.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "4e75418c5e616f30",
+  "lastOpenFiles": [
+    "wiki/index.md",
+    "wiki/ssh.md",
+    "wiki/inbox/ssh.md"
+  ]
+}

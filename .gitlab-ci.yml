@@ -1,0 +1,55 @@
+image: node:14.16.1
+# This folder is cached between builds
+# https://docs.gitlab.com/ce/ci/yaml/README.html#cache
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  # NODE_OPTIONS: "--max-old-space-size=8192"
+  # BUILD_PATH: public
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - node_modules/
+    - wiki/.layouts/.npm/
+    - wiki/.layouts/.cache/
+    - public/
+    - wiki/.layouts/public/
+
+
+before_script:
+  # - export NODE_OPTIONS="--max-old-space-size=8192"
+  - npm i -g npm
+
+test:
+  only:
+    - main
+  script:
+    - cd wiki/.layouts/
+    - npm i
+    - npm test
+  artifacts:
+    paths:
+      - test
+  except:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+pages:
+  only:
+    - main
+  
+  script:
+    - rm -rf ./public
+    - cd wiki/.layouts/
+    - npm i
+    - ./node_modules/.bin/gatsby build --prefix-paths
+    - cp -r ./public ../../public
+    
+  artifacts:
+    paths:
+      - ./public
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
